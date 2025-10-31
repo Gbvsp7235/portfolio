@@ -13,7 +13,13 @@
     <link rel="stylesheet" href="profile_style.css" />
     <title>BALA VENKATA SAI PRAKASH GORREPATI</title>
   </head>
-  <body>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbarSupportedContent"
+    data-bs-root-margin="-200px 0px -60% 0px"
+    data-bs-smooth-scroll="true"
+    tabindex="0"
+  >
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a
@@ -55,9 +61,10 @@
               <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
+              <!-- Resume Download Link -->
               <a
                 class="nav-link"
-                <!--Resume link-->
+                id="resume-link"
                 href="#"
                 download="Resume.pdf"
                 >Resume</a
@@ -93,11 +100,8 @@
           projects that make a real impact.
         </p>
         <p class="grey">
-          <a
-            class="btn btn-secondary"
-            <!--Resume link-->
-            href="#"
-            download="Resume.pdf"
+          <!-- Add resume link -->
+          <a class="btn btn-secondary" href="#" download="Resume.pdf"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"

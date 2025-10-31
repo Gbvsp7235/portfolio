@@ -20,17 +20,32 @@ body {
   color-scheme: light;
 }
 html {
-  scroll-padding-top: 100px;
+  scroll-padding-top: 70px;
 }
-#about {
-  padding-top: 80px;
+.navbar-nav {
+  width: 100%;
+  background-color: #f8f9fa;
+}
+#about,
+#skills,
+#experience,
+#projects,
+#education,
+#contact {
+  margin-top: -20px;
+  padding-top: 90px;
+}
+.navbar-collapse {
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
 }
 .navbar {
-  background-color: transparent;
   position: fixed;
   width: 100%;
   z-index: 1030;
   top: 0;
+  height: 70px;
 }
 .navbar-brand {
   font-weight: bold;
@@ -62,6 +77,8 @@ html {
   text-align: justify;
 }
 .sections {
+  margin-top: -20px;
+  padding-top: 90px;
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -195,9 +212,20 @@ html {
   }
 }
 
+@media (max-width: 991px) {
+  .navbar-collapse {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #ddd;
+  }
+  .container-fluid {
+    padding-left: 0;
+  }
+}
+
 @media (max-width: 575px) {
   .navbar-brand {
-    padding-left: 5px;
+    padding-left: 15px;
   }
   .sections {
     padding-left: 15px;
@@ -245,6 +273,9 @@ html {
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+  .navbar-brand {
+    padding-left: 50px;
+  }
   .project-intro {
     height: 14rem;
   }
@@ -381,6 +412,12 @@ html {
   .certificate-title,
   .project-title {
     font-weight: 600;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1080px) {
+  #resume-link {
+    display: none;
   }
 }
 
